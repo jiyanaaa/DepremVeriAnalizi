@@ -204,7 +204,7 @@ public class DepremVeriAnalizi extends JFrame {
     private void sonuclariGoster(AnalizSonuc sonuc) {
         sonucPanel.removeAll();
         CustomComponents.addResultRow(sonucPanel, "Risk Skoru",
-                String.format("%.1f/100", sonuc.getRiskSkoru()));
+                String.format("%.1f/50", sonuc.getRiskSkoru()));
         CustomComponents.addResultRow(sonucPanel, "Risk Seviyesi",
                 sonuc.getRiskSeviyesi().toString());
         CustomComponents.addResultRow(sonucPanel, "Hasarlı Bina",
