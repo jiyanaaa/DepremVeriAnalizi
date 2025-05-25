@@ -120,7 +120,7 @@ public class PDFRaporOlusturucu {
     }
 
     private void ekleIhtiyacAnalizi(Document document, AnalizSonuc sonuc) throws DocumentException {
-        ekleBolum(document, "İhtiyaç Analizi", ALTBASLIK_FONT, Element.ALIGN_LEFT);
+        ekleBolum(document, " İhtiyaç Analizi", ALTBASLIK_FONT, Element.ALIGN_LEFT);
 
         PdfPTable table = new PdfPTable(2);
         table.setWidthPercentage(100);
@@ -130,7 +130,7 @@ public class PDFRaporOlusturucu {
         ekleTableRow(table, "Çadır İhtiyacı:",
                 String.format("%d adet", sonuc.getCadirIhtiyaci()));
         ekleTableRow(table, "Gıda İhtiyacı:",
-                String.format("%d kişilik", sonuc.getGidaIhtiyaci()));
+                String.format("%d kisilik", sonuc.getGidaIhtiyaci()));
         ekleTableRow(table, "Hastane Yatak İhtiyacı:",
                 String.format("%d yatak", sonuc.getHastaneIhtiyaci()));
 
